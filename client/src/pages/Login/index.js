@@ -1,8 +1,26 @@
 import React from 'react';
 import './styles.css';
 
+import logoImage from "../../assets/logo.svg"
+import padlok from "../../assets/padlock.png"
+
 export default function Login() {
   return (
-       <h1>Welcome</h1>
+       <div className='login-container'>
+        <section className="form">
+            <img src={logoImage} alt='Erudio Logo'/>
+            <form>
+              <h1>Access your Acount</h1>
+              <input placeholder='Username' />
+              <input type='password' placeholder='Password'/>
+
+              <button type='submit'>Login</button>
+            </form>
+        </section>
+
+        <img src={padlok} alt="Login"/>
+
+       </div>
   )
+
 }
